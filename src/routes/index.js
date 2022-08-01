@@ -1,9 +1,15 @@
 var express = require('express');
+var user = require('../entity/user')
 var router = express.Router();
 
-/* GET home page. */
+var sessionData;
+
+router.get('/register', function(req, res, next) {
+});
+
+
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.send({status:200, message:"hi"})
 });
 
 module.exports = router;
